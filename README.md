@@ -23,7 +23,7 @@
   }
   body {
     font-family:'DM Sans',sans-serif;
-    color:#0b1f4a;
+    color:#1a3a6b;
     background:#ffffff;
     width:100%; max-width:100%;
     overflow-x:hidden;
@@ -32,21 +32,21 @@
 
   /* VARIABLES */
   :root {
-    --navy:   #0b1f4a;
-    --crimson:#c0392b;
+    --navy:   #1a3a6b;
+    --crimson:#cb4335;
     --gold:   #f0c040;
-    --blue:   #1a4a9a;
-    --cream:  #f5f7fa;
+    --blue:   #2255b0;
+    --cream:  #f8fafc;
     --white:  #ffffff;
-    --lgray:  #eef1f7;
-    --tmid:   #3a4a6a;
+    --lgray:  #f0f4f8;
+    --tmid:   #4a5a7a;
     --tlight: #7a8aaa;
   }
 
   /* ── NAVBAR ── */
   nav {
     position:fixed; top:0; left:0; right:0; z-index:1000;
-    background:rgba(11,31,74,0.97);
+    background:rgba(26,58,107,0.96);
     backdrop-filter:blur(12px);
     border-bottom:2px solid var(--gold);
     height:70px;
@@ -90,7 +90,7 @@
   /* Mobile menu */
   .mobile-menu {
     display:none; position:fixed; top:70px; left:0; right:0; bottom:0;
-    background:rgba(11,31,74,0.98); z-index:999;
+    background:rgba(20,50,100,0.97); z-index:999;
     flex-direction:column; padding:1.5rem 2rem; overflow-y:auto;
   }
   .mobile-menu.open { display:flex; }
@@ -109,7 +109,7 @@
   /* ── TICKER ── */
   .ticker-wrap {
     margin-top:70px; width:100%; overflow:hidden; padding:10px 0;
-    background:linear-gradient(90deg,#0b1f4a,#1a3a6e,#0b1f4a);
+    background:linear-gradient(90deg,#1a3a6b,#2a5090,#1a3a6b);
     border-bottom:2px solid var(--gold);
   }
   .ticker-inner {
@@ -124,7 +124,7 @@
     position:relative; overflow:hidden;
     min-height:calc(100vh - 70px);
     display:flex; flex-direction:column; justify-content:flex-end;
-    background:#0b1f4a;
+    background:#1a3a6b;
     width:100%;
   }
   .hero-building-bg { position:absolute; inset:0; z-index:0; }
@@ -137,10 +137,10 @@
     position:absolute; inset:0;
     background:linear-gradient(
       to bottom,
-      rgba(11,31,74,0.15) 0%,
-      rgba(11,31,74,0.45) 40%,
-      rgba(11,31,74,0.85) 70%,
-      rgba(9,18,50,0.97)  100%
+      rgba(26,58,107,0.05) 0%,
+      rgba(26,58,107,0.28) 40%,
+      rgba(26,58,107,0.68) 70%,
+      rgba(15,35,75,0.88)  100%
     );
   }
   .hero-content {
@@ -220,7 +220,7 @@
     gap:10px; margin-top:2rem; max-width:min(520px,100%);
   }
   .hero-stat {
-    background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.14);
+    background:rgba(255,255,255,0.14); border:1px solid rgba(255,255,255,0.25);
     border-radius:10px; padding:12px 6px; text-align:center;
   }
   .hero-stat .num { font-family:'Playfair Display',serif; font-size:1.3rem; color:var(--gold); font-weight:700; }
@@ -283,7 +283,7 @@
   .prog-btn-primary:hover { background:var(--blue); }
   .prog-btn-outline { border:1.5px solid var(--navy); color:var(--navy); }
   .prog-btn-outline:hover { background:var(--navy); color:white; }
-  .banner-pharmd    { background:linear-gradient(135deg,#0b1f4a,#1a3a6e); }
+  .banner-pharmd    { background:linear-gradient(135deg,#1a3a6b,#2a5aaa); }
   .banner-dpt       { background:linear-gradient(135deg,#8e1a14,#c0392b); }
   .banner-pharm-tech{ background:linear-gradient(135deg,#1a4a7a,#2471a3); }
   .banner-hnd       { background:linear-gradient(135deg,#1a5a20,#27ae60); }
@@ -320,12 +320,12 @@
   .ad-contact-info { font-size:10px; color:var(--tmid); }
   .ad-apply-btn { padding:7px 16px; border-radius:6px; font-size:11px; font-weight:700; text-decoration:none; transition:all 0.2s; white-space:nowrap; }
   /* ad themes */
-  .ad-pharmd .ad-header    {background:linear-gradient(135deg,#0b1f4a,#1a3a6e);}
-  .ad-pharmd .ad-open-badge{background:rgba(11,31,74,0.09);color:#0b1f4a;}
-  .ad-pharmd .ad-feat-dot  {background:#0b1f4a;}
-  .ad-pharmd .ad-sch-title {color:#0b1f4a;}
-  .ad-pharmd .ad-sch-pill  {background:rgba(11,31,74,0.07);color:#0b1f4a;}
-  .ad-pharmd .ad-apply-btn {background:#0b1f4a;color:white;}
+  .ad-pharmd .ad-header    {background:linear-gradient(135deg,#1a3a6b,#2a5aaa);}
+  .ad-pharmd .ad-open-badge{background:rgba(11,31,74,0.09);color:#1a3a6b;}
+  .ad-pharmd .ad-feat-dot  {background:#1a3a6b;}
+  .ad-pharmd .ad-sch-title {color:#1a3a6b;}
+  .ad-pharmd .ad-sch-pill  {background:rgba(11,31,74,0.07);color:#1a3a6b;}
+  .ad-pharmd .ad-apply-btn {background:#1a3a6b;color:white;}
   .ad-dpt .ad-header    {background:linear-gradient(135deg,#8e1a14,#c0392b);}
   .ad-dpt .ad-open-badge{background:rgba(192,57,43,0.09);color:#c0392b;}
   .ad-dpt .ad-feat-dot  {background:#c0392b;}
@@ -346,15 +346,15 @@
   .ad-hnd .ad-apply-btn {background:#1a5a20;color:white;}
 
   /* ── WHY DIHS ── */
-  .why { background:var(--navy); color:white; }
+  .why { background:#1e4080; color:white; }
   .why .section-title { color:white; }
   .features-grid {
     display:grid;
     grid-template-columns:repeat(auto-fill,minmax(min(100%,200px),1fr));
     gap:20px; margin-top:2.5rem;
   }
-  .feature-card { background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.1); border-radius:13px; padding:1.8rem 1.4rem; transition:all 0.3s; }
-  .feature-card:hover { background:rgba(255,255,255,0.1); transform:translateY(-4px); }
+  .feature-card { background:rgba(255,255,255,0.10); border:1px solid rgba(255,255,255,0.18); border-radius:13px; padding:1.8rem 1.4rem; transition:all 0.3s; }
+  .feature-card:hover { background:rgba(255,255,255,0.16); transform:translateY(-4px); }
   .feat-icon { width:46px; height:46px; border-radius:11px; background:rgba(240,192,64,0.18); display:flex; align-items:center; justify-content:center; margin-bottom:1rem; }
   .feat-icon svg { width:24px; height:24px; fill:var(--gold); }
   .feature-card h3 { font-family:'Playfair Display',serif; font-size:1rem; color:white; margin-bottom:6px; }
@@ -375,15 +375,15 @@
   .portal-card .portal-icon { width:48px; height:48px; border-radius:12px; background:rgba(255,255,255,0.2); display:flex; align-items:center; justify-content:center; }
   .portal-card .portal-icon svg { width:26px; height:26px; }
   .portal-card .portal-arrow { margin-top:1rem; font-size:11px; font-weight:700; color:rgba(255,255,255,0.75); letter-spacing:1px; text-transform:uppercase; }
-  .portal-student { background:linear-gradient(135deg,#0b1f4a,#1a3a6e); }
+  .portal-student { background:linear-gradient(135deg,#1a3a6b,#2255a8); }
   .portal-lms     { background:linear-gradient(135deg,#8e1a14,#c0392b); }
-  .portal-admin   { background:linear-gradient(135deg,#1a4a7a,#2471a3); }
+  .portal-admin   { background:linear-gradient(135deg,#1e5590,#2e85c0); }
   .portal-staff   { background:linear-gradient(135deg,#1a5a20,#27ae60); }
 
   /* ── CONTACT ── */
   .contact { background:var(--cream); }
   .contact-grid { display:grid; grid-template-columns:1fr 1.4fr; gap:2rem; margin-top:2rem; align-items:start; width:100%; }
-  .contact-info-card { background:var(--navy); border-radius:18px; padding:1.8rem; color:white; }
+  .contact-info-card { background:#1e4080; border-radius:18px; padding:1.8rem; color:white; }
   .contact-info-card h3 { font-family:'Playfair Display',serif; font-size:1.2rem; margin-bottom:1.4rem; color:white; }
   .contact-item { display:flex; align-items:flex-start; gap:12px; margin-bottom:1.2rem; }
   .contact-item-icon { width:38px; height:38px; border-radius:9px; background:rgba(240,192,64,0.14); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
@@ -406,7 +406,7 @@
   .form-group textarea:focus { border-color:var(--navy); }
 
   /* ── FOOTER ── */
-  footer { background:var(--navy); color:rgba(255,255,255,0.52); width:100%; }
+  footer { background:#162d5a; color:rgba(255,255,255,0.62); width:100%; }
   .footer-top { max-width:1200px; margin:0 auto; padding:3.5rem 1.5rem 2.5rem; display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:2.5rem; width:100%; box-sizing:border-box; }
   .footer-brand .brand-name { font-family:'Playfair Display',serif; font-size:1.15rem; color:white; margin-bottom:5px; }
   .footer-brand p { font-size:0.83rem; line-height:1.65; }
@@ -420,7 +420,7 @@
   .footer-socials a:hover { border-color:var(--gold); color:var(--gold); }
 
   /* ── MODAL ── */
-  .modal-overlay { display:none; position:fixed; inset:0; background:rgba(10,10,30,0.72); z-index:2000; align-items:center; justify-content:center; backdrop-filter:blur(4px); }
+  .modal-overlay { display:none; position:fixed; inset:0; background:rgba(20,40,80,0.65); z-index:2000; align-items:center; justify-content:center; backdrop-filter:blur(4px); }
   .modal-overlay.open { display:flex; }
   .modal-box { background:white; border-radius:18px; padding:2.2rem; max-width:460px; width:92%; position:relative; }
   .modal-close { position:absolute; top:14px; right:14px; background:none; border:none; cursor:pointer; font-size:20px; color:var(--tmid); }
